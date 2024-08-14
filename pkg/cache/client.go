@@ -5,6 +5,7 @@ import (
 	"time"
 )
 
+// RedisClient defines the interface for interacting with a Redis database.
 type RedisClient interface {
 	HashSet(ctx context.Context, key string, values any) error
 	Set(ctx context.Context, key string, value any) error
